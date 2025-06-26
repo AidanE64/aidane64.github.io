@@ -15,23 +15,29 @@ body{
 }
 /*SplitScreen intro*/
 #IntroSplitView{
-    padding: 4px;
+    padding: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     background-color: #272727;
     height: fit-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 8px solid #45d486;
 }
 /**Right side text**/
 #IntroSplitViewText{
     flex: 1;
     display: flex;
-    color: #ffffff;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(69, 212, 134, 1) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 80px;
     flex-direction: column;
-    padding-top: 20px;
-    justify-content: top;
+    justify-content: center;
     align-items: top;
     text-align: center;
 } 

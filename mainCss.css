@@ -1,0 +1,43 @@
+/*Create Variables Here for CSS*/
+:root {
+  --IntroHeight: 700px;
+}
+/*This resets the default styles of all elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #3d3939;
+    margin:0;
+}
+/*SplitScreen intro*/
+#IntroSplitView{
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    background-color: #272727;
+    height: fit-content;
+}
+/**Right side text**/
+#IntroSplitViewText{
+    flex: 1;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: top;
+    align-items: top;
+    text-align: center;
+} 
+/**Left side image**/
+#IntroSplitViewImg{
+  height: 700px;
+  width: auto;
+  display: block;
+}

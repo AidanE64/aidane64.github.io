@@ -13,6 +13,32 @@ body{
     background-color: #3d3939;
     margin:0;
 }
+/*Header*/
+#Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    padding: 20px;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(10, 66, 6, 1) 40%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    border-bottom: 2px solid #45d486;
+}
+#headButtons{
+    display: flex;
+    gap: 20px;
+}
+.Upperbutton {
+  background-color: black;
+  color: white;
+  border: 1px solid #45d485ab;
+  padding: 8px 16px;
+  cursor: pointer; /* <- here, not only on :hover */
+  transition: box-shadow 0.3s ease;
+}
+.Upperbutton:hover {
+  box-shadow: 0 0 10px 5px rgba(69, 212, 134, 0.8), 0 0 20px 10px rgba(69, 212, 134, 0.4);
+}
 /*SplitScreen intro*/
 #IntroSplitView{
     padding: 70px;
@@ -20,7 +46,6 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     background-color: #272727;
     height: fit-content;
     border-bottom-left-radius: 20px;
@@ -34,11 +59,9 @@ body{
     background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(69, 212, 134, 1) 80%);
     -webkit-background-clip: text;
     color: transparent;
-    display: inline-block;
     padding: 80px;
     flex-direction: column;
     justify-content: center;
-    align-items: top;
     text-align: center;
 } 
 /**Left side image**/

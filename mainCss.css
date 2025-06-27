@@ -83,3 +83,44 @@ body{
   margin-left: 4%;
   margin-right: 4%;
 }
+#myProjects{
+  border: Dashed 2px black;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  height: fit-content;
+  background:rgb(36, 36, 36);
+}
+#Projects{
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: center;
+ height: fit-content;
+}
+.project{
+  border: solid 2px whitesmoke;
+  padding: 3px;
+  background: linear-gradient(150deg,rgba(61, 57, 57, 1) 0%, rgb(113, 114, 114) 100%);
+  border-radius: 6px;
+  max-width: 40%;
+
+}
+.projectTitle{
+  float: left;
+  padding: 3px;
+  padding-bottom: 5px;
+  color: #d8a22ce1;
+}
+.projectText{
+  padding: 3px;
+  padding-top: 5px;
+  color: #c4aa74e1;
+}
+hr{
+  clear: left;
+  border: 1px solid #45d486;
+  border-radius: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+}

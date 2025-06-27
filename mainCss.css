@@ -33,15 +33,17 @@ body{
   color: white;
   border: 1px solid #45d485ab;
   padding: 8px 16px;
-  cursor: pointer; /* <- here, not only on :hover */
+  cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
 .Upperbutton:hover {
   box-shadow: 0 0 10px 5px rgba(69, 212, 134, 0.8), 0 0 20px 10px rgba(69, 212, 134, 0.4);
 }
+.Upperbutton:active {
+  color:rgba(69, 212, 124, .8);
+}
 /*SplitScreen intro*/
 #IntroSplitView{
-    padding: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -65,8 +67,16 @@ body{
     text-align: center;
 } 
 /**Left side image**/
+#SplitViewImageDiv{
+  flex: 1;
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+
+}
 #IntroSplitViewImg{
-  height: 700px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-height: 700px;
   width: auto;
-  display: block;
 }
